@@ -1,0 +1,18 @@
+<p>event works!</p>
+<button (click)="increaseCount()">ClickMe</button>
+<p>Count :  {{count}}</p>
+
+<button (click)="showEvent($event)">event</button>
+
+<input (input)="updateUser($event.target.value)">
+
+<p>Your Name :  {{userName}}</p>
+
+<button (click)="incre()">+</button>
+<p>flg count : {{flagCount()}}</p>
+
+
+<form (submit)="handelSubmit($event)">
+    <input placeholder="email">
+    <button>submit</button>
+</form>

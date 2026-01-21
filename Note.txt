@@ -1,0 +1,157 @@
+app.html
+<h1>{{}}</h1>		--	{{}} interpolation use to show typescript property value on ui.
+<h1>{{title()}}</h1>
+<h1>{{name}}</h1> Add normal perporty like without function bracket and Add title() as par define in app.ts folter 
+
+
+
+
+
+
+typescript -- app.ts
+we define type in typescript
+// browser not read typescript read javascript  - after bield javascript ki file hoti h.
+
+  protected readonly title = signal('my-app');
+  name = 'Saurav'	// No need to use varible like let var becouse its property
+  // typescript deduct old type of data when we update value like string to string 
+  
+// Default html for render on UI is app.html
+// BUT if i want to change this file then add new file like first.html and change templateUrl value in app.ts folder
+
+
+package.json  --  store meta data - importent detaile
+	dependencies // Importent for Project
+	devDependencies // Importent for development 
+	
+package-lock.json	-- Do not do anything manualy like update delete and create.
+					// 	Which version will exactly install in package.json that will decide this file.
+					// ^21.0.0  -- ^ mining minimam 21 version is fine. and if come any minar ya koi path to 
+						vo ham install kar lenge. uper vala chalega.
+					
+tsconfig.json  // here have all project typescript configration
+
+tsconfig.app.json  // here have only app folder file typescript configration
+
+tsconfig.spec.json  // use for test cases. do configration in same file		
+spec 	//	use for unit test cases.
+
+README.md 	// use for documentation
+
+
+angular.json
+//	Ye angular ki project configration rakta h.
+
+node_module folder
+// 	ye file create karta h according to package.json when we install page than it will create more file.
+// if we delete this folder that use command for genrate again (npm i or npm install)
+
+public folder
+// we can store images and extra css and js. jo hamare liye private nhi h use ham rakha sakte h.
+
+
+src folder
+//	isame ham sara code write karte h.
+
+	app -- is component // And we can make multipal conponent also.
+	
+	index.html -- entry point of html in project // load this file first.
+	// and this is define on angular.json inside option.browser
+	main.ts -- 	// load first ts file
+	styles.css // common file  use for global css.
+	
+	
+
+
+//----------------------------------------------
+interpolation	{{}} // this is use for show typescript file value and some javascript calculation code.
+
+  getSum(x:number,y:number)
+  {
+    return x+y;
+  }// we are defining type in typescript like this
+
+ template:`<h1> Hello hii {{name}}</h1>`,  // Inline Template 
+ 
+ 
+ 
+Angular CLI		(Command Line Interface)
+	//	Angular Command line interface is a tool that is helps developers create, build,test and deploy 
+		Angular application
+
+	another wrord 
+		command that help you to develop Angular Application
+		
+		
+		
+		
+------------------------------------------------------------------
+//Components		Command - ng g c Login
+Components ek bilding bloks hoti h Applications ke. or component ke ander ham specifik feture bnate h.
+harek feture ke liye ham alag se component bna sakte h.
+or use multipal jagah pe reuse kar sakte h.
+
+App folder is root component.
+
+Type
+1> Module Bsed components	- Ye 15 se pahle use hota tha.
+2> Stand Alone Components(Default) - New
+
+
+template use for inline html in component 
+templateUrl use to import html file in typescript file to render.
+
+styles is use for inline css (style)
+styleUrl url use for import style folder in typescript folder.
+styleUrls use for importent multipal css file in typescript file.
+
+@Component({		// its colled component decorator //isase pta chalega ki ye component h
+selector:'app-signin',
+template:`<h1>Hello signIn one {{title}}</h1>`,
+styles:[
+    `h1{
+    color:red;
+    }
+    `
+],
+})
+
+how to import component;
+imports: [Login,signinComponent],
+
+
+
+
+
+---------------------------------------------------------------------------------------
+Property Binding []
+
+ye typescript ka data html ki property me bhejta h1
+ex : - src ,value
+
+
+-------------------------------------------------------------
+Event Binding()
+
+HTML se event typescript component me function ki tarah call karna.
+
+Basic syntex
+	(eventName)="methodName()"
+
+
+
+
+--------------------------------------------------------------------
+
+Function Call on Button Click
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+DataType
+
+know what type of data store in valible
+
