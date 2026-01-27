@@ -1,0 +1,11 @@
+<p>get-set works!</p>
+
+<input (input)="updateName($event.target.value)"  placeholder="Enter Name">
+
+<p>Your Name :  {{name}}</p>
+
+<input #userEmail placeholder="Enter Email">
+
+<button (click)="getEmail(userEmail.value)">GetEmail</button>
+
+<h1>Your Email :  {{email}}</h1>

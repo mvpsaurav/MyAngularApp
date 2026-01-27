@@ -5,11 +5,16 @@ import { signinComponent } from './signin/signin';
 import { PropBind } from './prop-bind/prop-bind';
 import { Event } from './event/event';
 import { NewEvent } from './new-event/new-event';
+import { EventPerform } from './event-perform/event-perform';
+import { CounterApp } from './counter-app/counter-app';
+import { GetSet } from './get-set/get-set';
 
 @Component({
   selector: 'app-root',
   // imports: [Login,signinComponent,PropBind],
-    imports:[NewEvent],
+    // imports:[CounterApp],
+    imports :[GetSet],
+    // imports:[NewEvent],
     // imports:[Event],
   //templateUrl: './first.html',// Change UI Rander page
   // template:`<h1> Hello hii {{name}}</h1>`,  // Inline Template 
