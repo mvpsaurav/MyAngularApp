@@ -8,12 +8,13 @@ import { NewEvent } from './new-event/new-event';
 import { EventPerform } from './event-perform/event-perform';
 import { CounterApp } from './counter-app/counter-app';
 import { GetSet } from './get-set/get-set';
+import { IfElse } from './if-else/if-else';
 
 @Component({
   selector: 'app-root',
   // imports: [Login,signinComponent,PropBind],
     // imports:[CounterApp],
-    imports :[GetSet],
+    imports :[IfElse],
     // imports:[NewEvent],
     // imports:[Event],
   //templateUrl: './first.html',// Change UI Rander page

@@ -1,0 +1,42 @@
+<p>if-else works!</p>
+
+<input (input)="checkElagibl($event.target.value)" placeholder="Enter Your Age">
+
+@if(age > 18){
+    <p>Elagable</p>
+}@else{
+    <p>miner</p>
+}
+
+<button (click)="section='home'">Home</button>
+<button (click)="section='profile'">Profile</button>
+<button (click)="section='setting'">Setting</button>
+<button (click)="section='settng'">Settig</button>
+
+@if(section === 'home'){
+    <p> Welcome to Home</p>
+}@else if(section === 'profile'){
+    <p> Welcome to profile</p>
+}@else if(section === 'setting'){
+    <p> Welcome to setting</p>
+}@else{
+    <p>Condition not Found</p>
+}
+
+<input (input)="getValue($event.target.value)" placeholder="Enter your chose">
+
+
+@switch(categories){
+    @case ("Fruts"){
+       <h3>Fruts</h3> 
+    }
+    @case ("Veg"){
+       <h3>Veg</h3> 
+    }
+    @case ("NonVeg"){
+       <h3>Fruts</h3> 
+    }
+    @default{
+        <h3>Other</h3>
+    }
+}
