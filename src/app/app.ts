@@ -9,12 +9,13 @@ import { EventPerform } from './event-perform/event-perform';
 import { CounterApp } from './counter-app/counter-app';
 import { GetSet } from './get-set/get-set';
 import { IfElse } from './if-else/if-else';
+import { Loops } from './loops/loops';
 
 @Component({
   selector: 'app-root',
   // imports: [Login,signinComponent,PropBind],
     // imports:[CounterApp],
-    imports :[IfElse],
+    imports :[Loops],
     // imports:[NewEvent],
     // imports:[Event],
   //templateUrl: './first.html',// Change UI Rander page
